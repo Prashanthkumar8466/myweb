@@ -44,6 +44,7 @@ body {
     transform: translateX(100%);
     padding-top: 60px;
     z-index: 1;
+    border: 2px solid black;
 }
 
 .sidebar a {
@@ -52,16 +53,17 @@ body {
     color:#fff;
     display: block;
     transition: 0.3s;
-    font-size: 25px;
+    font-size: 15px;
 }
 .sidebar ul{
     list-style: none;
     left:0;
     margin-left:-38px;
+    border: 1px solid black;
 }
 .sidebar ul li{
-    padding-bottom:20px;
-    padding-top:20px;
+    padding-bottom:10px;
+    padding-top:10px;
     border-bottom: 1px solid #818181;
 }
 .sidebar a:hover {
@@ -69,9 +71,10 @@ body {
 }
 
 .sidebar .closebtn {
-    margin-top: -100%;
+    display: flex;
+    margin-top: -40px;
     left: 100%;
-    font-size: 36px;
+    font-size: 25px;
     margin-left: 15px;
     color: #fff;
     background-color: #00b5fd;
@@ -124,6 +127,9 @@ footer {
     }
 }
 @media screen and (max-width:700px) {
+    .navbar{
+        height: 55px;
+    }
     .sidebar-toggle {
         display: block;
         font-size: 30px;
@@ -138,5 +144,9 @@ footer {
     }
     .footer-content{
         display:block;
+    }
+    .sidebar ul li {
+        padding-bottom:5px;
+        padding-top:5px;
     }
 }

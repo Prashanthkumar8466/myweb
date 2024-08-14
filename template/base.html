@@ -13,7 +13,7 @@
         {% endif %}
         {% endfor %}
     </title>
-    <link rel="stylesheet" href="{% static 'css/Style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Stylesheet.css' %}">
     <link rel='icon' type="image/png" href='https://cdn-icons-png.flaticon.com/128/3135/3135715.png'>
     {% block link %}{% endblock  %}
     {% for navbar in Nav_Headers%}
@@ -31,7 +31,7 @@
 <body>
     <div class="navbar">
         {% for navbar in Nav_Headers%}
-        <h2>{{navbar.Title}}</h2>
+        <h2><a style='text-decoration:none;color:#ffff' href="/">{{navbar.Title}}</a></h2>
         {% endfor %}
         <ul class='menu-list'>
             <li><a href="/" class='home'>Home</a></li>

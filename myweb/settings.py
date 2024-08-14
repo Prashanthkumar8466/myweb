@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-1bla*772sz_z6ob_g-(v0kac#05c97utbryo5i^qpg^@fx1*1y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.1.11']
 
 
 # Application definition
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'myweb.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [ BASE_DIR ,'template'],
+        'DIRS': [ BASE_DIR / 'template'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -120,8 +120,10 @@ USE_TZ = True
 import os
 STATIC_URL = '/static/'
 STATICFILES_DIRS =[
-    os.path.join(BASE_DIR  'static')
+    os.path.join(BASE_DIR ,'static')
 ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Default primary key field type
