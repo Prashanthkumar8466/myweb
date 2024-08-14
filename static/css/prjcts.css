@@ -97,7 +97,6 @@
     }
     .image-container {
         display: inline-block; 
-        background-color: #f4f4f4; 
         overflow: hidden;
         width:100%;
     }
